@@ -1,0 +1,589 @@
+  /* Import Google Fonts */
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+  /* Reset default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Set the base font size in rem */
+  html {
+    font-size: 62.5%; /* 1rem = 10px */
+  }
+
+  /* Set the font family for the entire page */
+  body {
+    font-family: "Poppins", Arial;
+  }
+
+  /* NAV */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem; /* 60px in rem */
+    padding: 0.5rem 0.5rem; /* 5px in rem */
+  }
+
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .left-section img {
+    display: block;
+    height: 5rem; /* 50px in rem */
+    margin: 0 0 0.5rem 1.5rem; /* 15px in rem */
+    cursor: pointer;
+  }
+
+  .left-section h1 {
+    color: #111f4d;
+    font-size: 2rem; /* 20px in rem */
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .right-section {
+    display: flex;
+    align-items: center;
+    padding-right: 0.5rem; /* 5px in rem */
+  }
+
+  .log-in,
+  .sign-up {
+    border: none;
+    border-radius: 0.5rem; /* 5px in rem */
+    padding: 1rem 2rem 0.8rem; /* 10px 20px 8px in rem */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem; /* 11px in rem */
+    font-weight: bold;
+    margin: 0.4rem 0.2rem; /* 4px 2px in rem */
+    cursor: pointer;
+  }
+
+  .sign-up {
+    background-color: #111f4d;
+    color: white;
+  }
+
+  /* HEADER */
+  header {
+    align-items: center;
+    height: 45rem;
+    width: 100%;
+    position: relative;
+  }
+
+  .backround {
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url(assets/backRound.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+  }
+
+  header img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 4rem; /* 40px in rem */
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .hero img {
+    height: 10rem; /* 10% in rem */
+    width: 10rem;
+  }
+
+  .hero {
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+  }
+
+  /* BOOKING */
+  .booking-section {
+    padding: 3rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0;
+    bottom: -6rem; /* -60px in rem */
+    right: 0;
+  }
+
+  .booking-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0.4rem; /* 4px in rem */
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.1), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .ul-group {
+    padding-left: 3.6rem; /* 36px in rem */
+    padding-top: 1.8rem; /* 18px in rem */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+
+  .ul-group ul {
+    color: #222;
+    font-size: 1.3rem; /* 13px in rem */
+    font-weight: 900;
+    margin-right: 2rem; /* 20px in rem */
+    padding-bottom: 0.4rem; /* 4px in rem */
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .input-group {
+    padding: 0 3rem 2rem 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .input-group .one-input {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    border-right: none;
+    border-top-left-radius: 0.5rem; /* 5px in rem */
+    border-bottom-left-radius: 0.5rem; /* 5px in rem */
+    border: 0.2rem solid #999ca1;
+  }
+
+  .input-group .four-input {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    border-left: 0.2rem solid #999ca1;
+    border-top-right-radius: 0.5rem; /* 5px in rem */
+    border-bottom-right-radius: 0.5rem; /* 5px in rem */
+    border: 0.2rem solid #999ca1;
+  }
+
+  /* Style for inputs 2 and 3 (middle inputs) */
+  .input-group .two-input,
+  .input-group .three-input {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    border-top: 0.2rem solid #999ca1;
+    border-bottom: 0.2rem solid #999ca1;
+    border-right: none;
+    border-left: 0.2rem solid #999ca1;
+  }
+
+  .input-group input {
+    outline: none;
+    border: none;
+    margin-left: 0.8em; /* 8px in rem */
+    font-weight: 600;
+    font-size: 1.1rem; /* 11px in rem */
+  }
+
+  .input-group button {
+    background: #111f4d;
+    border: none;
+    border-radius: 0.5rem; /* 5px in rem */
+    font-weight: 900;
+    padding: 3.4rem 9rem 3.4rem 9rem;
+    margin: 2rem;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  /* POPULAR */
+  .popular-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 14rem;
+    gap: 2rem;
+  }
+
+  .popular-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popular-header h1 {
+    font-weight: 800;
+    font-size: medium;
+    margin-top: 4rem;
+  }
+
+  .popular-header p {
+    font-weight: 500;
+    font-size: small;
+    margin-top: auto;
+    margin-bottom: 4rem;
+  }
+  .popular-imgas {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .popular-imgas .img-box {
+    padding: 0;
+    border-radius: 0.4rem; /* 4px in rem */
+    overflow: hidden; /* Hide overflowing content */
+    height: 17rem; /* 170px in rem */
+    width: 29rem; /* 290px in rem */
+    margin: 0; /* Remove default margin */
+    cursor: pointer;
+  }
+
+  .popular-imgas .div-g {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .popular-imgas .div-g h1 {
+    font-size: 3.2rem;
+    color: #fff;
+    font-weight: 900;
+    transition: transform 0.5s ease;
+    margin: 0;
+  }
+
+  .popular-imgas .div-g:hover{
+    transform: scale(1.1);
+    transition:  0.5s ease;
+  }
+
+  .popular-imgas .div-g:hover h1 {
+    transform: scale(1.1);
+  }
+
+  /* Set background images for each img-box */
+  .popular-imgas .div-1 {
+    background-image: url(assets/pairs.png);
+  }
+
+  .popular-imgas .div-2 {
+    background-image: url(assets/hawaii.png);
+  }
+
+  .popular-imgas .div-3 {
+    background-image: url(assets/romi.png);
+  }
+
+  .popular-imgas .div-4 {
+    background-image: url(assets/pali.png);
+  }
+
+  .popular-imgas .div-5 {
+    background-image: url(assets/london.png);
+  }
+
+  .popular-imgas .div-6 {
+    background-image: url(assets/tokyo.png);
+  }
+
+  /* Common styles for benefits section */
+  .benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
+    gap: 2rem;
+    padding: 0 9rem 2rem 9rem;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Common styles for benefit items (img, h1, p) */
+  .benefits img {
+    width: 10rem;
+    margin: 2rem;
+  }
+
+  .benefits h1,
+  .benefits p {
+    font-weight: 600;
+    width: 25rem;
+    margin: 1.4rem;
+  }
+
+  /* Styles for individual benefit items */
+  .benefits-1,
+  .benefits-2,
+  .benefits-3,
+  .benefits-4 {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+
+  /* FOOTER */
+  footer {
+    background: #f5f5f5;
+    padding: 3rem; /* 40px in rem */
+  }
+
+  .footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .footer-section .logo img {
+    height: 4rem; /* 40px in rem */
+    margin-right: 0.6rem; /* 6px in rem */
+  }
+
+  .footer-section .logo h1 {
+    color: #111f4d;
+    font-size: 2rem; /* 20px in rem */
+    font-weight: bolder;
+  }
+
+  .footer-section .jetvoy-logo p {
+    font-size: 0.2em; /* 2px in rem */
+    font-weight: 900;
+    line-height: 0.1rem; /* 1px in rem */
+    margin-bottom: 1em; /* 10px in rem */
+    text-transform: uppercase;
+  }
+
+  .footer-section .logo {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 16.6667%;
+    flex-shrink: 0;
+    margin-top: 1.2rem; /* 12px in rem */
+    max-width: 15rem; /* 150px in rem */
+  }
+
+  .footer-section .logo .jetvoy-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-section .logo .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 11.4rem; /* 114px in rem */
+    margin-top: 0.4rem; /* 4px in rem */
+  }
+
+  .footer-section .logo .cards img {
+    width: 3.5rem; /* 35px in rem */
+    height: auto;
+    margin: 0.2rem 0; /* 2px in rem */
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.8rem; /* 8px in rem */
+    gap: 8rem;
+  }
+
+  .footer-content h1 {
+    font-weight: 600;
+    font-size: medium;
+    margin-bottom: 1.5rem; /* 15px in rem */
+    text-transform: uppercase;
+  }
+
+  .footer-content p {
+    color: #555;
+    font-size: 1.2rem; /* 12px in rem */
+    font-weight: 800;
+    margin-bottom: 1rem; /* 10px in rem */
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .footer-section .footer-content .con-4-sociaLinks {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-section .footer-content .con-4-sociaLinks i {
+    padding: 0.2rem; /* 2px in rem */
+  }
+
+  .footer-section .email {
+    margin-top: 3rem;
+    width: auto;
+  }
+
+  .footer-section .email-box input {
+    background-color: #e0e0e0;
+    border: none;
+    outline: none;
+  }
+
+  .footer-section .email-box {
+    display: flex;
+    align-items: center;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 0.5rem; /* 5px in rem */
+    display: flex;
+    height: 3.5rem; /* 35px in rem */
+    margin: 0.8rem; /* 8px in rem */
+    padding: 0.9rem; /* 9px in rem */
+    width: auto;
+    cursor: pointer;
+  }
+
+  .footer-section .email-box-logo {
+    right: 8.5rem; /* 85px in rem */
+    color: #d7d7d7;
+    border-radius: 0.5rem; /* 5px in rem */
+    height: 2.5rem; /* 25px in rem */
+    width: 2.5rem; /* 25px in rem */
+    border: none;
+  }
+
+  .footer-section .email-box-logo i {
+    align-items: center;
+    color: #555;
+    padding: 0.5rem; /* 5px in rem */
+  }
+
+  .coins-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+  }
+
+  .coins-section h1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+  }
+
+  .coins-section-box {
+    align-items: center;
+    display: flex;
+    width: 40rem; /* 300px in rem */
+  }
+
+  .coins-imgs {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap; /* Wrap white space */
+  }
+
+  .coins-imgs img {
+    margin-right: 1rem; /* 10px in rem - Add spacing between images */
+  }
+
+
+  /* Media query for screens up to 768px (phones and tablets) */
+  @media screen and (max-width: 768px) {
+    header {
+      height: auto; /* Adjust the header height for smaller screens */
+    }
+
+    .backround {
+      padding: 4rem;
+    }
+
+    .hero h1 {
+      font-size: 1.6rem; 
+    }
+
+    .hero img {
+      height: 6rem; /* Adjust the image size for smaller screens */
+      width: 6rem;
+    }
+
+    .booking-section {
+      bottom: 24rem;
+      top: 18rem;
+    }
+
+    .booking-box {
+      padding: 1.5rem;
+    }
+
+    .ul-group ul {
+      font-size: 1.2rem;
+    }
+
+    .input-group {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .input-group .one-input,
+    .input-group .two-input,
+    .input-group .three-input,
+    .input-group .four-input {
+      padding: 1rem;
+      border: 0.2rem solid #999ca1;
+      border-radius: 4px;
+      margin: .4em;
+    }
+
+    .input-group input {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .input-group button {
+      padding: 1rem 3rem; /* Adjust padding for smaller screens */
+      margin: 1rem 0; /* Adjust margin for smaller screens */
+    }
+
+  /* POPULAR */
+  .popular-section {
+    align-items: center;
+    justify-content: center;
+    margin-top: 35rem;
+  }
+
+  .popular-section h1, p {
+    width: auto;
+    text-align: center;
+  }
+
+  .footer-content p {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+}
